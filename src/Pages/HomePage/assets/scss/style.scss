@@ -1,0 +1,39 @@
+@import './../../../../GlobalAssets/scss/colors';
+.container {
+  width: 100%;
+  height: 100vh;
+  background: $primary-gradient;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div {
+    p {
+      text-align: center;
+      color: $almost-white;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+    }
+  }
+  &-component {
+    color: $secondary!important;
+    font-size: 1.5rem!important;
+    padding: 10px 20px;
+    background: white;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      color: orange!important;
+    }
+  }
+  &-description {
+    font-size: 0.8rem!important;
+    margin-top: 30px;
+    color: $grey;
+    a {
+      color: orange;
+      text-decoration: none;
+    }
+  }
+}

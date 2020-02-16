@@ -1,8 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import WebFont from 'webfontloader';
+import dotenv from 'dotenv';
+
+import './GlobalAssets/scss/style.scss';
+//main style
+
+dotenv.config();
+
+WebFont.load({
+  google: {
+    families: ['Roboto: 300,400,500,600,700'],
+  },
+});
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
