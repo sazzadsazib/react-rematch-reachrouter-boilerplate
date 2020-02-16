@@ -41,18 +41,19 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "@commitlint/cli": "^8.3.5",
-    "@commitlint/config-conventional": "^8.3.4",
-    "lint-staged": "^10.0.7",
-    "node-sass": "^4.13.1",
-    "prettier": "^1.19.1"
-  },
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-commit": "lint-staged"
     }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.7",
+    "node-sass": "^4.13.1",
+    "prettier": "^1.19.1"
   },
   "lint-staged": {
     "*.{js,json,css,scss,html,md}": [
