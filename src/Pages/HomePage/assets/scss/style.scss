@@ -1,5 +1,5 @@
 @import './../../../../GlobalAssets/scss/colors';
-.container {
+.container-homepage {
   width: 100%;
   height: 100vh;
   background: $primary-gradient;
@@ -16,19 +16,19 @@
     }
   }
   &-component {
-    color: $secondary!important;
-    font-size: 1.5rem!important;
+    color: $secondary !important;
+    font-size: 1.5rem !important;
     padding: 10px 20px;
     background: white;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
     &:hover {
-      color: orange!important;
+      color: orange !important;
     }
   }
   &-description {
-    font-size: 0.8rem!important;
+    font-size: 0.8rem !important;
     margin-top: 30px;
     color: $grey;
     a {
